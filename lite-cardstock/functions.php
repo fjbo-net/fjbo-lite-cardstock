@@ -28,7 +28,7 @@
 		wp_enqueue_script('fjboCardstockFunctions');
 
 		wp_register_script('fjboCardstockSlider', (get_template_directory_uri().'/js/cardstock-slider.js'), array('jquery', 'fjboCardstockFunctions'), false, true);
-		if(is_page_template('template_children_slider.php')) {
+		if(is_page_template('template_cardholder.php')) {
 			wp_enqueue_script('fjboCardstockSlider');
 		}
 	}
